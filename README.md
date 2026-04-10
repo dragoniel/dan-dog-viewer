@@ -2,6 +2,9 @@
 
 A small React + TypeScript application that fetches random dog images from the [Dog CEO API](https://dog.ceo/api) and lets users browse breeds, select a featured dog, and save favorites locally.
 
+You can see the app running [here](https://brave-sea-0021e6110.1.azurestaticapps.net)
+
+
 ## Features
 
 - Displays one selected dog image and breed name
