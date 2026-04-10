@@ -1,0 +1,83 @@
+:root {
+  --color-bg: rgb(4, 4, 81);
+  --color-text: white;
+  --font: 'DM Sans', system-ui, sans-serif;
+  --selectedDog-size: 50vh;
+  --thumbnail-size: 10vw;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.topSection {
+  display: flex;
+  gap: 8%;
+}
+
+.selectedDog{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  text-align: center;
+}
+
+.selectedPicture{
+  width: 100%;
+  height: var(--selectedDog-size);
+  background-color: black;
+}
+
+.favorites {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  text-align: left;
+} 
+
+.thumbnailsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, var(--thumbnail-size));
+  gap: 10px;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.thumbnail:hover {
+  transform: scale(1.18);
+}
+
+.thumbnailPicture {
+  height: var(--thumbnail-size);
+  width: 100%;
+  background-color: black;
+}
+
+img {
+  height: 100%;
+  width: 100%;      
+  object-fit: contain;
+
+}
+
+.thumbnail, .favorites, .selectedDog {
+  background-color: rgb(28, 30, 147);
+  border: 2px solid rgb(58, 61, 212);
+  border-radius: 10px;      
+  padding: 20px;
+}
